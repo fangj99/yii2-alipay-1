@@ -1,0 +1,25 @@
+{
+    "name": "ysj/yii2-alipay",
+    "description": "Alipay To YII2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," alipay", "RESTful"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TrojanSun",
+            "email": "lt@ysj.io"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "require-dev": {
+    	 "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ysj\\yii2\\alipay\\": ""
+        }
+    }
+}
