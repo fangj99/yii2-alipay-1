@@ -3,6 +3,7 @@
 #注意 ：
 1、因不会使用packagist，所以下面的均为手动
 2、YII2必须开启urlmanager，否则有r=这样的路径会出问题
+3、异步必须关闭csrf
 
 #修改步骤
 1、修改文件vendor/composer/autoload_psr4.php
