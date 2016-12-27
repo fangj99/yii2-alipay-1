@@ -9,7 +9,7 @@
 在数组增加成员变量
 ```php
 'ysj\\yii2\\alipay\\' => array($vendorDir . '/ysj/yii2-alipay'),
-```php
+```
 2、修改文件vendor/composer/autoload_static.php
 在数组$prefixDirsPsr4中增加成员变量
 ```php
@@ -17,11 +17,11 @@
             array (
                 0 => __DIR__ . '/..' . '/ysj/yii2-alipay',
             ),
-```php
+```
 在数组$prefixLengthsPsr4中的y数组增加成员变量
 ```php
 'ysj\\yii2\\alipay'=>61,
-```php
+```
 3、修改文件vendor/yiisoft/extensions.php
 在数组中增加成员变量
 ````php
@@ -34,4 +34,4 @@
                     '@ysj/yii2/alipay' => $vendorDir . '/ysj/yii2-alipay',
                 ),
         ),
-```php
+```
