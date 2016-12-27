@@ -35,3 +35,29 @@
                 ),
         ),
 ```
+4、把下载的文件夹解压到vendor/yiisoft/ysj下，路径自己补齐，入口文件路径为：
+vendor/yiisoft/ysj/yii2-alipay/AlipayPay.php
+
+#使用说明
+去PAY(参数修改为自己的)
+```php
+
+    /**
+     * @param $out_trade_no 商户订单号，商户网站订单系统中唯一订单号，必填
+     * @param $subject  订单名称，必填
+     * @param $total_fee    付款金额，必填
+     * @param $body 商品描述，可空
+     */
+	$pay = new AlipayPay();
+            return $pay->requestPay("0-" . time(), "test--0" . time() . Yii::$app->user->getId(), "0.01", "YII2测试alipay");
+```
+同步验证
+```php
+$pay = new AlipayPay();
+        var_dump($pay->verifyReturn());
+```
+异步验证
+```php
+$pay = new AlipayPay();
+        var_dump($pay->verifyNotify());
+```
